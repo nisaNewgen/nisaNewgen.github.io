@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Supply and Inventory System</title>
+<style>
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{ text-align: center;}
+.colorFor {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1>Damage Information</h1>
+<a href="index.html">Main</a>
+<p>
+<label>Requested By :</label> 
+<input type="text" name="itemName" value="Own Organization Name">
+</p>
+
+<p>
+<label>Damage Reason: </label> 
+<input type="text" name="reason" value="">  
+</p>
+
+<p>
+<label>Item List </label> 
+<table>
+  <tr>
+    <th>Group</th>
+    <th>Sub Group</th>
+    <th>Item</th>
+    <th>UOM</th>
+    <th>Country Of Origin</th>
+    <th>Brand</th>
+    <th>Quantity</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td><select id="itemGroupId" name="itemGroup">
+        <option value="1">Food</option>
+        <option value="2">other</option></select>
+     </td>
+    <td><select id="itemSubGroupId" name="itemSubGroup">
+        <option value="1">Rice</option>
+        <option value="2">Oil</option></select>
+    </td>
+      <td><select id="itemId" name="item">
+        <option value="1">Miniket</option>
+        <option value="2">Najir Shail</option>
+        <option value="3">Soybean oil</option></select>
+     </td>
+     <td>KG</td>
+      <td><select id="invCountryOfOriginId" name="countryOfOrigin">
+        <option value="1">China</option>
+        <option value="2">USA</option></select>
+     </td>
+      <td><select id="invBrand" name="brand">
+        <option value="3">Low</option>
+        <option value="4">high</option></select>
+     </td>
+     <td><input type="number" name="quantity"> </td>
+     <td><input type="text" name="remarks"> </td>
+  </tr>
+   <tr>
+    <td><select id="itemGroupId" name="itemGroup">
+        <option value="1">Food</option>
+        <option value="2">other</option></select>
+     </td>
+    <td><select id="itemSubGroupId" name="itemSubGroup">
+        <option value="1">Rice</option>
+        <option value="2">Oil</option></select>
+    </td>
+      <td><select id="itemId" name="item">
+        <option value="1">Miniket</option>
+        <option value="2">Najir Shail</option>
+        <option value="3">Soybean oil</option></select>
+     </td>
+     <td>KG</td>
+      <td><select id="invCountryOfOriginId" name="countryOfOrigin">
+        <option value="1">China</option>
+        <option value="2">USA</option></select>
+     </td>
+      <td><select id="invBrandId" name="brand">
+        <option value="3">Low</option>
+        <option value="4">high</option></select>
+     </td>
+     <td><input type="number" name="quantity"> </td>
+     <td><input type="text" name="remarks"> </td>
+  </tr>
+</table>
+<br/>
+<p>
+<input type="submit" name="Save">
+</p>
+<p class="colorFor">Input:</p>
+<p>
+{<ul>
+<li><span>"id"</span>: <span>null</span>,</li>
+<li><span>"reason"</span>: <span>"flood"</span>,</li>
+<li><span>"InvItem"</span>: {<ul>
+<li><span>"itemId"</span>: <span>1</span>,</li>
+<li><span>"invCountryOfOriginId"</span>: <span>1</span>,</li>
+<li><span>"invBrandId"</span>: <span>1</span>,</li>
+<li><span>"quantity"</span>: <span>50</span>,</li>
+<li><span>"remarks"</span>: <span>test</span></li></ul>} <span>,</span>
+{<ul>
+<li><span>"itemId"</span>: <span>3</span>,</li>
+<li><span>"invCountryOfOriginId"</span>: <span>1</span>,</li> 
+<li><span>"invBrandId"</span>: <span>1</span>,</li>
+<li><span>"quantity"</span>: <span>10</span>,</li>
+<li><span>"remarks"</span>: <span>test 2</span></li></ul>}
+</ul>}
+</p>
+<p class="colorFor">Output:</p>
+<p>
+{<ul>
+<li><span>"status"</span>: <span>"ok"</span>,</li>
+<li><span>"type"</span>: <span>"save"</span>,</li>
+<li><span>"type"</span>: <span>"Damage information save successfully"</span></li>
+</ul>}
+</p>
+</body>
+</html>
