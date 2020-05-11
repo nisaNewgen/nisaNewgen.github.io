@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Supply and Inventory System</title>
+<style>
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{ text-align: center;}
+.colorFor {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Item Sub Group</h1>
+<a href="index.html">Main</a>
+<p>
+<label>Group</label> 
+<select id="itemGroupId" name="itemGroup">
+        <option value="1">Food</option>
+        <option value="2">other</option>
+</select>
+</p>
+<p>
+<label>Item Sub Group Name</label> 
+<input type="text" name="subGroupName">
+</p>
+<p>
+<input type="submit" name="Save">
+</p>
+<p class="colorFor">Input:</p>
+<p>
+{<ul>
+<li><span>"id"</span>: <span>null</span>,</li>
+<li><span>"itemGroupId"</span>: <span>1</span>,</li>
+<li><span>"subGroupName"</span>: <span>"Rice"</span></li>
+</ul>}
+</p>
+<p class="colorFor">Output:</p>
+<p>
+{<ul>
+<li><span>"status"</span>: <span>"ok"</span>,</li>
+<li><span>"type"</span>: <span>"save"</span>,</li>
+<li><span>"type"</span>: <span>"Item Sub Group save successfully"</span></li>
+</ul>}
+</p>
+</body>
+</html>
