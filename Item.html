@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Supply and Inventory System</title>
+<style>
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{ text-align: center;}
+.colorFor {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>Item</h1>
+<a href="index.html">Main</a>
+<p>
+<label>Group</label> 
+<select id="itemSubGroupId" name="itemSubGroup">
+        <option value="1">Food</option>
+        <option value="2">other</option>
+</select>
+</p>
+<p>
+<label>Sub Group</label> 
+<select id="itemGroupId" name="itemGroup">
+        <option value="1">Rice</option>
+        <option value="2">Oil</option>
+</select>
+</p>
+<p>
+<label>Item Name</label> 
+<input type="text" name="itemName">
+</p>
+<p>
+<p> 
+<p>
+<label>Feature Type</label> 
+<select id="featureType" name="featureType">
+        <option value="Brand">Brand</option>
+        <option value="Country of Origin">Country of Origin</option>
+</select>
+</p>
+<p>
+<label>Feature Name</label> 
+<input type="text" name="featureName"> <button type="button" name="Add">Add</button>
+</p>
+<p>
+<label>Feature List </label> 
+<table>
+  <tr>
+    <th>Feature Type</th>
+    <th>Feature Name</th>
+  </tr>
+  <tr>
+    <td>Brand</td>
+    <td>Low</td>
+  </tr>
+   <tr>
+    <td>Country of Origin</td>
+    <td>China</td>
+  </tr>
+</table>
+<br/>
+<input type="submit" name="Save">
+</p>
+<p class="colorFor">Input:</p>
+<p>
+{<ul>
+<li><span>"id"</span>: <span>null</span>,</li>
+<li><span>"itemSubGroupId"</span>: <span>1</span>,</li>
+<li><span>"itemName"</span>: <span>"Miniket"</span></li>
+<li><span>"ItemFeature"</span>: {<ul>
+<li><span>"type"</span>: <span>Brand</span>,</li>
+<li><span>"name"</span>: <span>Low</span></li></ul>} <span>,</span>
+{<ul>
+<li><span>"type"</span>: <span>Country of Origin</span>,</li>
+<li><span>"name"</span>: <span>China</span></li></ul>}</li>
+</ul>}
+</p>
+<p class="colorFor">Output:</p>
+<p>
+{<ul>
+<li><span>"status"</span>: <span>"ok"</span>,</li>
+<li><span>"type"</span>: <span>"save"</span>,</li>
+<li><span>"type"</span>: <span>"Item save successfully"</span></li>
+</ul>}
+</p>
+</body>
+</html>
