@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Supply and Inventory System</title>
+<style>
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{ text-align: center;}
+.colorFor {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1>Stock Report</h1>
+<a href="index.html">Main</a>
+<p>
+<label>Organization Name :</label> 
+<input type="text" name="organizationId" value="Organization Name"> flex or tree
+</p>
+
+<p>
+<label>From Date: </label> 
+<input type="date" name="fromDate" value="">  
+</p>
+
+<p>
+<label>To Date: </label> 
+<input type="date" name="toDate" value="">  
+</p>
+
+<p>
+<input type="submit" name="submit">
+</p>
+
+
+<br/>
+
+<p class="colorFor">Input:</p>
+<p>
+{<ul>
+<li><span>"organizationId"</span>: <span>Organization ID</span>,</li>
+<li><span>"fromDate"</span>: <span>2020-05-12</span>,</li>
+<li><span>"toDate"</span>: <span>2020-06-12</span></li>
+</ul>}
+</p>
+
+
+<p class="colorFor">Output:</p>
+<p>
+{<ul>
+<li><span>"itemName"</span>: <span>"Miniket"</span>,</li>
+<li><span>"receiveQty"</span>: <span>500</span>,</li>
+<li><span>"issueQty"</span>: <span>100</span>,</li>
+<li><span>"damageQty"</span>: <span>5</span>,</li>
+<li><span>"distributeQty"</span>: <span>200</span>,</li>
+<li><span>"balance"</span>: <span>195</span></li>
+</ul>} <span>,</span> <br/>
+{<ul>
+<li><span>"itemName"</span>: <span>"Miniket"</span>,</li>
+<li><span>"receiveQty"</span>: <span>400</span>,</li>
+<li><span>"issueQty"</span>: <span>50</span>,</li>
+<li><span>"damageQty"</span>: <span>10</span>,</li>
+<li><span>"distributeQty"</span>: <span>50</span>,</li>
+<li><span>"balance"</span>: <span>195</span></li>
+</ul>}
+</p>
+
+<p class="colorFor">Stock Report Format</p>
+
+<p>
+<h2>"Organization Name" Stock Report</h2>
+<label></label> 
+<table>
+  <tr>
+    <th>Item Name</th>
+    <th>Receive Quantity</th>
+    <th>Issue Quantity</th>
+    <th>Damage Quantity</th>
+    <th>Distribute Quantity</th>
+    <th>Balance</th>
+  </tr>
+  <tr>
+      <td>Miniket</td>
+      <td>500</td>
+      <td>100</td>
+      <td>5</td>
+      <td>200</td>
+      <td>195</td>
+  </tr>
+   <tr>
+      <td>Soybean oil</td>
+      <td>400</td>
+      <td>50</td>
+      <td>10</td>
+      <td>50</td>
+      <td>295</td>
+  </tr>
+</table>
+</p>
+</body>
+</html>
